@@ -1,51 +1,21 @@
-<section id="cover" data-transition="fade" style="background:#1B2340;color:#FBF7EF;font-family:'Noto Sans JP', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
-<div style="width:860px;display:flex;flex-direction:column;gap:36px">
-<p style="font-size:24px;font-weight:700;letter-spacing:4px;color:#FFC845">2026年10月 ｜ AI NEWS RANKING</p>
-<h1 style="font-family:'M PLUS Rounded 1c', Arial, sans-serif;font-size:120px;font-weight:800;line-height:1.1;color:#FBF7EF">AIニュース<br>TOP10</h1>
-<p style="font-size:28px;line-height:1.6;color:#C9D3EA">家事ロボットからAIハッカーまで、話題のAIニュースを「用語」と「例え話」でやさしく解説します。</p>
-<div style="display:flex;flex-direction:row;gap:16px;flex-wrap:wrap">
-<p style="font-size:24px;font-weight:700;color:#1B2340;background:#FFC845;padding:8px 24px;border-radius:28px">暮らし</p>
-<p style="font-size:24px;font-weight:700;color:#1B2340;background:#FFC845;padding:8px 24px;border-radius:28px">仕事</p>
-<p style="font-size:24px;font-weight:700;color:#1B2340;background:#FFC845;padding:8px 24px;border-radius:28px">セキュリティ</p>
-</div>
-</div>
-<x-embed style="position:absolute;left:1040px;top:160px;width:752px;height:760px"><style>
-html,body{margin:0;height:100%;overflow:hidden;background:transparent}
-svg{display:block;width:100%;height:100%}
-text{font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo","Noto Sans JP","Noto Sans CJK JP",sans-serif;font-weight:800}
-.n{opacity:0;transform-box:fill-box;transform-origin:center;animation:cd 10s infinite both}
-@keyframes cd{0%{opacity:0;transform:scale(.7)}2%,8%{opacity:1;transform:scale(1)}10%,100%{opacity:0;transform:scale(1.15)}}
-.ring{transform-origin:376px 360px;animation:spin 10s linear infinite}
-.orbit{transform-origin:376px 360px;animation:spin 24s linear infinite reverse}
-@keyframes spin{to{transform:rotate(360deg)}}
-.glow{transform-box:fill-box;transform-origin:center;animation:glow 2s ease-in-out infinite}
-@keyframes glow{50%{transform:scale(1.06);opacity:.5}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.n:last-of-type{opacity:1}}
-</style>
-<svg viewBox="0 0 752 760" role="img" aria-label="第10位から第1位へカウントダウンするアニメーション">
-<circle class="glow" cx="376" cy="360" r="262" fill="none" stroke="#34407A" stroke-width="2"/>
-<circle cx="376" cy="360" r="230" fill="#222B4D"/>
-<circle class="ring" cx="376" cy="360" r="250" fill="none" stroke="#F07C3B" stroke-width="10" stroke-linecap="round" stroke-dasharray="320 1251"/>
-<g class="orbit">
-<circle cx="376" cy="50" r="18" fill="#FFC845"/>
-<circle cx="644" cy="205" r="14" fill="#2F5FCC"/>
-<circle cx="644" cy="515" r="18" fill="#F07C3B"/>
-<circle cx="376" cy="670" r="14" fill="#FFC845"/>
-<circle cx="108" cy="515" r="18" fill="#2F5FCC"/>
-<circle cx="108" cy="205" r="14" fill="#F07C3B"/>
-</g>
-<text x="376" y="230" text-anchor="middle" font-size="48" fill="#C9D3EA">第</text>
-<text x="376" y="545" text-anchor="middle" font-size="48" fill="#C9D3EA">位</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:0s">10</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:1s">9</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:2s">8</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:3s">7</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:4s">6</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:5s">5</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FBF7EF" style="animation-delay:6s">4</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FFC845" style="animation-delay:7s">3</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#FFC845" style="animation-delay:8s">2</text>
-<text class="n" x="376" y="440" text-anchor="middle" font-size="210" fill="#F07C3B" style="animation-delay:9s">1</text>
-<text x="376" y="740" text-anchor="middle" font-size="28" fill="#C9D3EA">第10位から順に発表</text>
-</svg></x-embed>
+<section id="cover" data-transition="fade" style="background:radial-gradient(circle at 75% 45%, #1E3A6E 0%, #0D1426 60%); color:#EEF2F7; font-family:'Noto Sans JP', Arial, sans-serif; padding:128px">
+<x-embed style="position:absolute; left:1150px; top:150px; width:642px; height:780px"><style>
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:transparent}
+body{font-family:system-ui,-apple-system,"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;color:#EEF2F7}
+.r1{position:absolute;left:41px;top:110px;width:560px;height:560px;border-radius:50%;border:6px dashed #3FD0E0;opacity:.45;animation:sp 24s linear infinite}
+.r2{position:absolute;left:91px;top:160px;width:460px;height:460px;border-radius:50%;border:8px solid transparent;border-top-color:#FF8A3D;border-right-color:#FF8A3D;animation:sp 3s linear infinite reverse}
+.r3{position:absolute;left:131px;top:200px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,#1E3A6E 0%,rgba(13,20,38,0) 70%)}
+@keyframes sp{to{transform:rotate(360deg)}}
+.win{position:absolute;left:141px;top:210px;width:360px;height:360px;overflow:hidden}
+.col{animation:ct 12s cubic-bezier(.7,0,.3,1) infinite}
+.col div{height:360px;line-height:360px;text-align:center;font-family:"Arial Black",Impact,system-ui,sans-serif;font-weight:900;font-size:240px;color:#3FD0E0;text-shadow:0 0 40px rgba(63,208,224,.55)}
+@keyframes ct{0%,7%{transform:translateY(0)}10%,17%{transform:translateY(-360px)}20%,27%{transform:translateY(-720px)}30%,37%{transform:translateY(-1080px)}40%,47%{transform:translateY(-1440px)}50%,57%{transform:translateY(-1800px)}60%,67%{transform:translateY(-2160px)}70%,77%{transform:translateY(-2520px)}80%,87%{transform:translateY(-2880px)}90%,100%{transform:translateY(-3240px)}}
+.lb{position:absolute;left:0;right:0;top:40px;text-align:center;font-size:28px;letter-spacing:10px;color:#8190AD;font-weight:700}
+.dot{display:inline-block;width:14px;height:14px;border-radius:50%;background:#FF8A3D;margin-right:14px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+</style><div class="lb"><span class="dot"></span>COUNTDOWN</div><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="win"><div class="col"><div>10</div><div>9</div><div>8</div><div>7</div><div>6</div><div>5</div><div>4</div><div>3</div><div>2</div><div>1</div></div></div></x-embed>
+<p data-build-in="fade 1 auto" style="position:absolute; left:128px; top:196px; width:420px; font-family:Oswald, 'Arial Narrow', sans-serif; font-size:28px; font-weight:500; letter-spacing:6px; color:#0D1426; background:#3FD0E0; padding:8px 24px; border-radius:999px; text-align:center">AI NEWS RANKING</p>
+<h1 data-build-in="rise 2 auto" style="position:absolute; left:128px; top:276px; width:1000px; font-family:'Dela Gothic One', 'Noto Sans JP', sans-serif; font-size:128px; font-weight:400; line-height:1.1; color:#EEF2F7">10月の<br>AIニュース<br><span style="color:#3FD0E0">TOP10</span></h1>
+<p data-build-in="fade 3 auto" style="position:absolute; left:128px; top:736px; width:960px; font-size:36px; line-height:1.6; color:#D5DDEA">家事ロボットからAIハッカーまで<br>いま押さえておきたい10のトピックを一挙解説</p>
+<aside>10月のAIニュースを、第10位から第1位までカウントダウン形式で紹介します。それぞれ「概要」「用語メモ」「たとえ話」「仕事・生活への影響」で解説します。</aside>
 </section>
