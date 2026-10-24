@@ -1,0 +1,34 @@
+<section id="dd5" data-transition="fade" style="background:#0D1426; color:#EEF2F7; font-family:'Noto Sans JP', Arial, sans-serif; padding:128px 128px 160px">
+<p style="position:absolute; left:128px; top:112px; width:1664px; font-size:24px; font-weight:700; letter-spacing:4px; color:#3FD0E0">脅威② ｜ A2B攻撃（裏口直撃）</p>
+<h2 style="position:absolute; left:128px; top:152px; width:1664px; font-family:'Dela Gothic One', 'Noto Sans JP', sans-serif; font-size:52px; font-weight:400; line-height:1.3; color:#EEF2F7">表の鍵を固めても、裏口から持ち出される</h2>
+<div data-build-in="fade 1 auto" style="position:absolute; left:128px; top:300px; width:1040px; display:flex; flex-direction:column; gap:8px"><p style="font-size:24px; font-weight:700; letter-spacing:4px; color:#3FD0E0">A2B（App to Backend）攻撃とは？</p><p style="font-size:28px; line-height:1.6; color:#D5DDEA">公開されているスマホアプリをAIで分析し、アプリと本体サーバーをつなぐ「通信の口（API）」の仕組みを割り出す手口です。</p></div>
+<div data-build-in="rise 2 auto" style="position:absolute; left:128px; top:470px; width:1040px; display:flex; flex-direction:row; align-items:center; gap:24px; background:#1C2238; border:2px solid #1a2f3a; border-radius:20px; padding:36px 40px"><x-icon name="Lightbulb" style="color:#3FD0E0; width:48px; height:48px"></x-icon><p style="flex:1; font-size:28px; line-height:1.6; color:#CDE8ED">例え話：玄関（ログイン画面）の鍵をどれだけ頑丈にしても、「裏口（API）の仕組みを読み解かれ、裏口から直接データを持ち出される」状態です。</p></div>
+<div data-build-in="fade 3 auto" style="position:absolute; left:128px; top:672px; width:1040px; display:flex; flex-direction:row; align-items:center; gap:20px; background:#2a1a1a; border:2px solid #4a2525; border-radius:20px; padding:32px 40px"><x-icon name="Warning" style="color:#FF6B5A; width:44px; height:44px"></x-icon><p style="flex:1; font-size:28px; line-height:1.6; color:#F3C9C0"><b style="color:#FF8A3D">個人のパスワード変更では防げない。</b>表の画面を通らない攻撃のため、サービス側が裏口を直す必要があります。</p></div>
+<x-embed style="position:absolute; left:1232px; top:300px; width:560px; height:560px"><style>
+html,body{margin:0;height:100%;overflow:hidden;background:transparent}
+svg{display:block;width:100%;height:100%}
+text{font-family:system-ui,-apple-system,"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;font-weight:700}
+.lock{transform-origin:150px 150px;animation:lock 6s ease-in-out infinite}
+@keyframes lock{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+.flow{stroke-dasharray:10 10;animation:flow .8s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-20}}
+.data{opacity:0;animation:data 3s ease-in infinite}
+@keyframes data{0%{opacity:0;transform:translate(0,0)}20%{opacity:1}100%{opacity:0;transform:translate(-300px,0)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}.data{opacity:1}}
+</style><svg viewBox="0 0 560 560" role="img" aria-label="正面のログインは施錠され、裏口のAPIからデータが抜かれるイラスト">
+<rect x="150" y="120" width="260" height="320" rx="16" fill="#16213D" stroke="#24345C" stroke-width="3"/>
+<text x="280" y="100" text-anchor="middle" font-size="26" fill="#D5DDEA">本体サーバー</text>
+<g class="lock"><rect x="120" y="250" width="60" height="50" rx="8" fill="#3FD0E0"/><path d="M132 250 v-14 a18 18 0 0 1 36 0 v14" fill="none" stroke="#3FD0E0" stroke-width="7"/></g>
+<text x="150" y="340" text-anchor="middle" font-size="24" fill="#3FD0E0">正面：施錠</text>
+<rect x="380" y="250" width="56" height="50" rx="8" fill="none" stroke="#FF8A3D" stroke-width="5" stroke-dasharray="6 6"/>
+<text x="470" y="245" text-anchor="middle" font-size="24" fill="#FF8A3D">裏口(API)</text>
+<path class="flow" d="M520 275 H436" stroke="#FF8A3D" stroke-width="5" fill="none"/>
+<g class="data" fill="#FF8A3D"><rect x="430" y="330" width="40" height="28" rx="5"/></g>
+<g class="data" fill="#FF8A3D" style="animation-delay:1s"><rect x="430" y="380" width="40" height="28" rx="5"/></g>
+<g class="data" fill="#FF8A3D" style="animation-delay:2s"><rect x="430" y="430" width="40" height="28" rx="5"/></g>
+<text x="280" y="500" text-anchor="middle" font-size="24" fill="#8190AD">個人情報が裏口から流出</text>
+</svg></x-embed>
+<p style="position:absolute; left:128px; bottom:64px; width:800px; font-size:24px; color:#8190AD">深掘り：AIと情報漏洩</p>
+<p style="position:absolute; right:128px; bottom:64px; width:400px; text-align:right; font-size:24px; color:#8190AD">4 / 10</p>
+<aside>脅威②のA2B攻撃。アプリの裏側にある通信の口（API）を狙う。玄関の鍵を固めても裏口から抜かれる、というたとえで。重要なのは「個人のパスワード変更では防げない」構造だという点。</aside>
+</section>

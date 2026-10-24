@@ -4,12 +4,13 @@
   "lists": "css",
   "title": "10月のAIニュース TOP10",
   "cover": "cover",
-  "order": ["cover", "why", "n10", "n9", "n8", "n7", "n6", "n5", "n4", "n3", "n2", "reveal", "n1", "overview", "outro", "qa"],
+  "order": ["cover", "why", "n10", "n9", "n8", "n7", "n6", "n5", "n4", "n3", "n2", "reveal", "n1", "overview", "outro", "qa", "dd1", "dd2", "dd3", "dd4", "dd5", "dd6", "dd7", "dd8", "dd9", "dd10", "dd11"],
   "sections": {
     "s1": {"description": "オープニング：AIニュースを知っておくべき理由", "start": "cover"},
     "s2": {"description": "第10位〜第6位：ロボット住宅・Web更新・AIの後始末・盗聴器事件・AIエージェント", "start": "n10"},
     "s3": {"description": "第5位〜第1位：動画編集・AI秘書・新モデル・AI詐欺・AIハッカー", "start": "n5"},
-    "s4": {"description": "ランキング振り返りと、10のニュースから見える3つの流れ、質疑応答", "start": "overview"}
+    "s4": {"description": "ランキング振り返りと、10のニュースから見える3つの流れ、質疑応答", "start": "overview"},
+    "s5": {"description": "深掘り：AIと情報漏洩 — 3つの脅威（全自動ハッカー・A2B攻撃・土台の穴）と実践防衛策", "start": "dd1"}
   },
   "faces": {
     "dela-gothic-one": {"family": "Dela Gothic One", "href": "https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"},
