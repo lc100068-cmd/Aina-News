@@ -4,9 +4,9 @@
   "lists": "css",
   "title": "AIニュース TOP10（2026年10月）",
   "cover": "cover",
-  "order": ["cover", "ranking", "r10a", "r10b", "r09a", "r09b", "r08a", "r08b", "r07a", "r07b", "r06a", "r06b", "r05a", "r05b", "r04a", "r04b", "r03a", "r03b", "r02a", "r02b", "r01a", "r01b", "wrap"],
+  "order": ["cover", "why", "ranking", "r10a", "r10b", "r09a", "r09b", "r08a", "r08b", "r07a", "r07b", "r06a", "r06b", "r05a", "r05b", "r04a", "r04b", "r03a", "r03b", "r02a", "r02b", "r01a", "r01b", "wrap"],
   "sections": {
-    "s0": {"description": "表紙と今回のランキング一覧", "start": "cover"},
+    "s0": {"description": "表紙、AIニュースを知るべき理由、今回のランキング一覧", "start": "cover"},
     "s1": {"description": "第10位〜第6位：暮らしと仕事を変えるAIサービス", "start": "r10a"},
     "s2": {"description": "第5位・第4位：作業を肩代わりし先回りするAI", "start": "r05a"},
     "s3": {"description": "TOP3：超高性能AIとAI時代のサイバー攻撃", "start": "r03a"},
