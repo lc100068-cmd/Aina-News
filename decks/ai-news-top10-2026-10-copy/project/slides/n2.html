@@ -4,43 +4,45 @@
 html,body{margin:0;height:100%;overflow:hidden;background:transparent}
 svg{display:block;width:100%;height:100%}
 text{font-family:system-ui,-apple-system,"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;font-weight:700}
-.hook{animation:hook 2.4s ease-in-out infinite}
-@keyframes hook{0%,100%{transform:translateY(0)}50%{transform:translateY(16px)}}
-.shake{transform-box:fill-box;transform-origin:center;animation:shake 2s ease-in-out infinite}
-@keyframes shake{0%,70%,100%{transform:rotate(0)}75%{transform:rotate(-8deg)}85%{transform:rotate(8deg)}}
-.blink{animation:blink 1.6s ease-in-out infinite}
-@keyframes blink{50%{opacity:.4}}
+.pp{transform-box:fill-box;transform-origin:center}
+.led{animation:led 1.2s steps(2,start) infinite}
+@keyframes led{to{opacity:.25}}
+.fl{stroke-dasharray:10 12;animation:fl .8s linear infinite}
+@keyframes fl{to{stroke-dashoffset:22}}
+.meter{transform-box:fill-box;transform-origin:bottom;animation:mt 5s ease-in infinite}
+@keyframes mt{0%,10%{transform:scaleY(.15)}80%,95%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.up{animation:up 1s ease-in-out infinite}
+@keyframes up{50%{transform:translateY(-8px)}}
+.sg{transform-box:fill-box;transform-origin:bottom;animation:sg 1.4s ease-in-out infinite}
+@keyframes sg{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
-</style><svg viewBox="0 0 432 400" role="img" aria-label="カタコトの怪しいメールと、本物そっくりのAI製メールに釣り針が垂れているアニメーション">
+</style><svg viewBox="0 0 432 400" role="img" aria-label="巨大データセンターに電気が吸い込まれ、住宅の電気代が跳ね上がり、住民が反対のプラカードを掲げるアニメーション">
 <defs><clipPath id="pc"><rect x="16" y="16" width="400" height="300" rx="16"/></clipPath></defs>
 <rect x="1" y="1" width="430" height="398" rx="24" fill="#16213D" stroke="#24345C" stroke-width="2"/>
-<rect x="16" y="16" width="400" height="300" rx="16" fill="#0D1426"/>
-<g clip-path="url(#pc)"><g transform="translate(38.9 -10.1) scale(0.466)">
-<rect x="40" y="56" width="170" height="46" rx="23" fill="#5B6478"/>
-<rect x="40" y="118" width="680" height="180" rx="18" fill="#EEF2F7"/>
-<rect x="70" y="160" width="390" height="22" rx="11" fill="#0D1426"/>
-<rect x="70" y="220" width="260" height="22" rx="11" fill="#0D1426"/>
-<path d="M70 196 q8 8 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0" fill="none" stroke="#E0453A" stroke-width="4"/>
-<path d="M70 256 q8 8 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0" fill="none" stroke="#E0453A" stroke-width="4"/>
-<g class="shake"><circle cx="640" cy="208" r="48" fill="#E0453A"/><text x="640" y="232" text-anchor="middle" font-size="68" fill="#EEF2F7">!</text></g>
-<rect x="40" y="338" width="190" height="46" rx="23" fill="#FF8A3D"/>
-<rect x="40" y="400" width="680" height="300" rx="18" fill="#EEF2F7"/>
-<rect x="70" y="440" width="400" height="26" rx="13" fill="#0D1426"/>
-<rect x="70" y="496" width="360" height="18" rx="9" fill="#8190AD"/>
-<rect x="70" y="532" width="310" height="18" rx="9" fill="#8190AD"/>
-<rect x="380" y="610" width="300" height="64" rx="32" fill="#1E3A6E"/>
-<rect x="440" y="634" width="180" height="16" rx="8" fill="#EEF2F7"/>
-<g class="hook"><line x1="650" y1="310" x2="650" y2="560" stroke="#FF8A3D" stroke-width="4"/><path d="M650 558 v22 a16 16 0 0 1 -32 0 v-10 l-8 8" fill="none" stroke="#FF8A3D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
-</g></g>
-<rect x="34" y="332" width="176" height="44" rx="22" fill="#5B6478"/><text x="122" y="362" text-anchor="middle" font-size="24" fill="#EEF2F7">カタコト</text>
-<rect class="blink" x="222" y="332" width="176" height="44" rx="22" fill="#FF8A3D"/><text x="310" y="362" text-anchor="middle" font-size="24" fill="#0D1426">完璧な日本語</text>
+<rect x="16" y="16" width="400" height="300" rx="16" fill="#EEF2F7"/>
+<g clip-path="url(#pc)">
+<rect x="16" y="268" width="400" height="48" fill="#D9D4C7"/>
+<rect x="236" y="96" width="160" height="172" rx="8" fill="#0D1426"/>
+<g fill="#3FD0E0"><circle class="led" cx="258" cy="122" r="5"/><circle cx="278" cy="122" r="5"/><circle class="led" cx="298" cy="122" r="5" style="animation-delay:.3s"/><circle cx="258" cy="162" r="5"/><circle class="led" cx="278" cy="162" r="5" style="animation-delay:.6s"/><circle cx="298" cy="162" r="5"/><circle class="led" cx="258" cy="202" r="5" style="animation-delay:.9s"/><circle cx="278" cy="202" r="5"/><circle class="led" cx="298" cy="202" r="5"/></g>
+<g fill="#24345C"><rect x="316" y="114" width="64" height="16" rx="4"/><rect x="316" y="154" width="64" height="16" rx="4"/><rect x="316" y="194" width="64" height="16" rx="4"/><rect x="316" y="234" width="64" height="16" rx="4"/></g>
+<text x="316" y="88" text-anchor="middle" font-size="20" fill="#0D1426">AIデータセンター</text>
+<path class="fl" d="M90 176 C140 120 190 120 236 150" fill="none" stroke="#FF8A3D" stroke-width="6"/>
+<polygon points="40,196 82,166 124,196" fill="#B04A12"/><rect x="48" y="196" width="68" height="56" fill="#F4F2EC" stroke="#0D1426" stroke-width="3"/><rect x="74" y="222" width="18" height="30" fill="#0D1426"/>
+<rect x="150" y="150" width="34" height="100" rx="6" fill="#FFFFFF" stroke="#0D1426" stroke-width="3"/>
+<rect class="meter" x="156" y="156" width="22" height="88" rx="3" fill="#E0453A"/>
+<g class="up"><text x="167" y="138" text-anchor="middle" font-size="24" fill="#E0453A">¥↑</text></g>
+<g class="sg"><rect x="34" y="262" width="5" height="40" fill="#5B6478"/><rect x="12" y="240" width="50" height="28" rx="4" fill="#FFFFFF" stroke="#E0453A" stroke-width="3"/><text x="37" y="261" text-anchor="middle" font-size="18" fill="#E0453A">反対</text></g>
+<g class="sg" style="animation-delay:.4s"><rect x="114" y="266" width="5" height="40" fill="#5B6478"/><rect x="92" y="244" width="50" height="28" rx="4" fill="#FFFFFF" stroke="#E0453A" stroke-width="3"/><text x="117" y="265" text-anchor="middle" font-size="18" fill="#E0453A">反対</text></g>
+<g class="sg" style="animation-delay:.8s"><rect x="194" y="264" width="5" height="40" fill="#5B6478"/><rect x="172" y="242" width="50" height="28" rx="4" fill="#FFFFFF" stroke="#E0453A" stroke-width="3"/><text x="197" y="263" text-anchor="middle" font-size="18" fill="#E0453A">反対</text></g>
+</g>
+<rect x="34" y="332" width="176" height="44" rx="22" fill="#3FD0E0"/><text x="122" y="362" text-anchor="middle" font-size="24" fill="#0D1426">電気代が高騰</text>
+<rect x="222" y="332" width="176" height="44" rx="22" fill="#FF8A3D"/><text x="310" y="362" text-anchor="middle" font-size="24" fill="#0D1426">選挙の争点</text>
 </svg></x-embed>
-<div data-build-in="rise 1 auto" style="position:absolute; left:640px; top:112px; width:1152px; display:flex; flex-direction:column; align-items:flex-start; gap:16px"><p style="font-size:24px; font-weight:700; color:#0D1426; background:#3FD0E0; padding:6px 20px; border-radius:999px">詐欺対策</p><h2 style="font-family:'Dela Gothic One', 'Noto Sans JP', sans-serif; font-size:48px; font-weight:400; line-height:1.3; color:#EEF2F7">「日本語が怪しいから詐欺」はもう通用しない！巧妙すぎるAIフィッシングメール</h2></div>
-<div data-build-in="fade 2 auto" style="position:absolute; left:640px; top:324px; width:1152px; display:flex; flex-direction:column; gap:8px"><p style="font-size:24px; font-weight:700; letter-spacing:4px; color:#3FD0E0">概要</p><p style="font-size:28px; line-height:1.6; color:#D5DDEA">AIが極めて自然な日本語を書けるようになり、本物の銀行や公式サービスと見分けがつかない完璧な文面の詐欺メールや偽サイトが、一瞬で作れるようになってしまいました。</p></div>
-<div data-build-in="rise 3 auto" style="position:absolute; left:640px; top:548px; width:368px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Book" style="color:#B8C4D6; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#B8C4D6">用語メモ</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA"><b>AIフィッシング詐欺：</b>海外の攻撃者でもAIで文法ミスや違和感のない完璧な日本語を作成し、相手を騙すサイバー攻撃です。</p></div>
-<div data-build-in="rise 4 auto" style="position:absolute; left:1032px; top:548px; width:368px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Lightbulb" style="color:#3FD0E0; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#3FD0E0">たとえ話</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">「カタコトで怪しい手紙」が、「本物の銀行員が書いたとしか思えない完璧な案内文」に変わった状態。</p></div>
-<div data-build-in="rise 5 auto" style="position:absolute; left:1424px; top:548px; width:368px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Users" style="color:#FF8A3D; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#FF8A3D">仕事・生活への影響</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">文章の怪しさでは見抜けない時代。メールのリンクは安易に押さず、公式アプリやブックマークからアクセスしましょう。</p></div>
+<div data-build-in="rise 1 auto" style="position:absolute; left:640px; top:112px; width:1152px; display:flex; flex-direction:column; align-items:flex-start; gap:16px"><p style="font-size:24px; font-weight:700; color:#0D1426; background:#FF8A3D; padding:6px 20px; border-radius:999px">社会 ｜ アメリカ</p><h2 style="font-family:'Dela Gothic One', 'Noto Sans JP', sans-serif; font-size:44px; font-weight:400; line-height:1.3; color:#EEF2F7">全米で吹き荒れる「AIデータセンター反対運動」とアメリカ中間選挙の最大の争点化</h2></div>
+<div data-build-in="fade 2 auto" style="position:absolute; left:640px; top:312px; width:1152px; display:flex; flex-direction:column; gap:8px"><p style="font-size:24px; font-weight:700; letter-spacing:4px; color:#FF8A3D">どんなニュース？</p><p style="font-size:28px; line-height:1.6; color:#D5DDEA">AIを動かす巨大な「データセンター」が全米各地（オハイオ州等）で建設され、電気代が数万円単位で値上がりしたり騒音被害が出た結果、住民による激しい建設反対運動が起きています。2026年の中間選挙では数億ドルの政治資金（Super PAC）が投入され、「推進派か反対派か」が最大の争点に。</p></div>
+<div data-build-in="rise 3 auto" style="position:absolute; left:640px; top:616px; width:564px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Lightbulb" style="color:#3FD0E0; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#3FD0E0">例え話でいうと</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">遠い未来のAI脅威論よりも、裏山に建った巨大施設のせいで毎月の電気代が跳ね上がり、政治家と住民が大激突している現実。</p></div>
+<div data-build-in="rise 4 auto" style="position:absolute; left:1228px; top:616px; width:564px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Users" style="color:#FF8A3D; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#FF8A3D">生活・仕事への影響</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">AIの華やかな発展の裏側で、電気代の値上がりや環境破壊、電力不足といった、身近な生活コストや政治への悪影響が表面化しています。</p></div>
 <p style="position:absolute; left:128px; bottom:64px; width:800px; font-size:24px; color:#8190AD">AIニュース TOP10</p>
 <p style="position:absolute; right:128px; bottom:64px; width:400px; text-align:right; font-size:24px; color:#8190AD">第2位</p>
-<aside>第2位はAIフィッシング詐欺。カタコトの怪しいメールと、本物そっくりのメールに釣り針が垂れている対比を見せ、「文章では見抜けない」「リンクを押さず公式アプリから」を強調する。</aside>
+<aside>第2位：全米で吹き荒れる「AIデータセンター反対運動」とアメリカ中間選挙の最大の争点化。どんなニュース？　AIを動かす巨大な「データセンター」が全米各地（オハイオ州等）で建設され、電気代が数万円単位で値上がりしたり騒音被害が出た結果、住民による激しい建設反対運動が起きています。2026年の中間選挙では数億ドルの政治資金（Super PAC）が投入され、「推進派か反対派か」が最大の争点に。　例え話でいうと：遠い未来のAI脅威論よりも、裏山に建った巨大施設のせいで毎月の電気代が跳ね上がり、政治家と住民が大激突している現実。　生活・仕事への影響：AIの華やかな発展の裏側で、電気代の値上がりや環境破壊、電力不足といった、身近な生活コストや政治への悪影響が表面化しています。</aside>
 </section>

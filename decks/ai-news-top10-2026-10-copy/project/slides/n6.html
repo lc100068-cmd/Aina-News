@@ -5,50 +5,39 @@ html,body{margin:0;height:100%;overflow:hidden;background:transparent}
 svg{display:block;width:100%;height:100%}
 text{font-family:system-ui,-apple-system,"Hiragino Sans","Yu Gothic","Noto Sans JP",sans-serif;font-weight:700}
 .pp{transform-box:fill-box;transform-origin:center}
-.orbit{transform-origin:380px 400px;animation:spin 30s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-.p{opacity:0;animation-duration:4s;animation-iteration-count:infinite;animation-timing-function:ease-in-out;animation-fill-mode:both}
-.p1{animation-name:p1}.p2{animation-name:p2;animation-delay:1s}.p3{animation-name:p3;animation-delay:2s}.p4{animation-name:p4;animation-delay:3s}
-@keyframes p1{0%{opacity:0;transform:translate(0,0)}8%{opacity:1}36%{opacity:1;transform:translate(0,-150px)}42%,100%{opacity:0;transform:translate(0,-150px)}}
-@keyframes p2{0%{opacity:0;transform:translate(0,0)}8%{opacity:1}36%{opacity:1;transform:translate(150px,0)}42%,100%{opacity:0;transform:translate(150px,0)}}
-@keyframes p3{0%{opacity:0;transform:translate(0,0)}8%{opacity:1}36%{opacity:1;transform:translate(0,150px)}42%,100%{opacity:0;transform:translate(0,150px)}}
-@keyframes p4{0%{opacity:0;transform:translate(0,0)}8%{opacity:1}36%{opacity:1;transform:translate(-150px,0)}42%,100%{opacity:0;transform:translate(-150px,0)}}
-.ck{opacity:0;animation:ck 4s infinite both}
-@keyframes ck{0%,38%{opacity:0;transform:scale(.3)}44%{opacity:1;transform:scale(1.2)}48%,88%{opacity:1;transform:scale(1)}96%,100%{opacity:0}}
-.core{animation:core 2s ease-in-out infinite}
-@keyframes core{50%{transform:scale(1.05)}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important}.ck{opacity:1}}
-</style><svg viewBox="0 0 432 400" role="img" aria-label="AI代理人が予約電話・メール送信・買い物・サブスク解約を順番にこなすアニメーション">
+.bar{transform-box:fill-box;transform-origin:bottom;animation:bar 6s ease-out infinite}
+@keyframes bar{0%,8%{transform:scaleY(0)}40%,94%{transform:scaleY(1)}100%{transform:scaleY(0)}}
+.pct{animation:pct 6s infinite}
+@keyframes pct{0%,38%{opacity:0}44%,94%{opacity:1}100%{opacity:0}}
+.r{animation:rk 3s ease-in infinite}
+.r2{animation-delay:1.5s}
+@keyframes rk{0%{transform:translateY(0);opacity:0}8%{opacity:1}70%{opacity:1}100%{transform:translateY(-300px);opacity:0}}
+.fire{transform-box:fill-box;transform-origin:top;animation:fi .2s ease-in-out infinite alternate}
+@keyframes fi{to{transform:scaleY(1.4)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style><svg viewBox="0 0 432 400" role="img" aria-label="売上の8割を占める最新モデルの棒グラフと、半年ごとに打ち上がり続ける新型ロケットのアニメーション">
 <defs><clipPath id="pc"><rect x="16" y="16" width="400" height="300" rx="16"/></clipPath></defs>
 <rect x="1" y="1" width="430" height="398" rx="24" fill="#16213D" stroke="#24345C" stroke-width="2"/>
 <rect x="16" y="16" width="400" height="300" rx="16" fill="#EEF2F7"/>
-<g clip-path="url(#pc)"><g transform="translate(26 -34) scale(0.5)">
-<circle class="orbit" cx="380" cy="400" r="290" fill="none" stroke="#B8C4D6" stroke-width="4" stroke-dasharray="6 12"/>
-<g stroke="#B8C4D6" stroke-width="5"><line x1="380" y1="308" x2="380" y2="232"/><line x1="472" y1="400" x2="548" y2="400"/><line x1="380" y1="492" x2="380" y2="568"/><line x1="288" y1="400" x2="212" y2="400"/></g>
-<circle class="p p1" cx="380" cy="400" r="12" fill="#FF8A3D"/><circle class="p p2" cx="380" cy="400" r="12" fill="#FF8A3D"/><circle class="p p3" cx="380" cy="400" r="12" fill="#FF8A3D"/><circle class="p p4" cx="380" cy="400" r="12" fill="#FF8A3D"/>
-<circle cx="380" cy="170" r="62" fill="#FFFFFF" stroke="#1E3A6E" stroke-width="5"/>
-<rect x="362" y="140" width="36" height="60" rx="8" fill="none" stroke="#0D1426" stroke-width="6"/><circle cx="380" cy="189" r="4" fill="#0D1426"/>
-<circle cx="610" cy="400" r="62" fill="#FFFFFF" stroke="#FF8A3D" stroke-width="5"/>
-<rect x="580" y="379" width="60" height="42" rx="6" fill="none" stroke="#0D1426" stroke-width="6"/><polyline points="582,383 610,404 638,383" fill="none" stroke="#0D1426" stroke-width="6" stroke-linejoin="round"/>
-<circle cx="380" cy="630" r="62" fill="#FFFFFF" stroke="#1E3A6E" stroke-width="5"/>
-<path d="M350 610 h12 l10 32 h32 l10 -24 h-48" fill="none" stroke="#0D1426" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/><circle cx="376" cy="654" r="5" fill="#0D1426"/><circle cx="400" cy="654" r="5" fill="#0D1426"/>
-<circle cx="150" cy="400" r="62" fill="#FFFFFF" stroke="#FF8A3D" stroke-width="5"/>
-<rect x="118" y="379" width="64" height="42" rx="6" fill="none" stroke="#0D1426" stroke-width="6"/><line x1="118" y1="391" x2="182" y2="391" stroke="#0D1426" stroke-width="6"/><line x1="156" y1="401" x2="172" y2="417" stroke="#B03020" stroke-width="6" stroke-linecap="round"/><line x1="172" y1="401" x2="156" y2="417" stroke="#B03020" stroke-width="6" stroke-linecap="round"/>
-<g class="pp ck" style="animation-delay:0s"><circle cx="424" cy="126" r="20" fill="#1E3A6E"/><path d="M414 126 l8 8 l12 -14" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
-<g class="pp ck" style="animation-delay:1s"><circle cx="654" cy="356" r="20" fill="#1E3A6E"/><path d="M644 356 l8 8 l12 -14" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
-<g class="pp ck" style="animation-delay:2s"><circle cx="424" cy="586" r="20" fill="#1E3A6E"/><path d="M414 586 l8 8 l12 -14" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
-<g class="pp ck" style="animation-delay:3s"><circle cx="194" cy="356" r="20" fill="#1E3A6E"/><path d="M184 356 l8 8 l12 -14" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
-<g class="pp core"><circle cx="380" cy="400" r="92" fill="#0D1426"/><text x="380" y="424" text-anchor="middle" font-size="64" fill="#3FD0E0">AI</text></g>
-</g></g>
-<rect x="34" y="332" width="176" height="44" rx="22" fill="#3FD0E0"/><text x="122" y="362" text-anchor="middle" font-size="24" fill="#0D1426">予約・メール</text>
-<rect x="222" y="332" width="176" height="44" rx="22" fill="#FF8A3D"/><text x="310" y="362" text-anchor="middle" font-size="24" fill="#0D1426">買い物・解約</text>
+<g clip-path="url(#pc)">
+<line x1="44" y1="280" x2="388" y2="280" stroke="#B8C4D6" stroke-width="4"/>
+<rect x="60" y="60" width="96" height="220" rx="8" fill="#D5DDEA"/>
+<rect class="bar" x="60" y="104" width="96" height="176" rx="8" fill="#FF8A3D"/>
+<text class="pct" x="108" y="200" text-anchor="middle" font-size="36" fill="#0D1426">8割</text>
+<text x="108" y="88" text-anchor="middle" font-size="18" fill="#5B6478">旧モデル</text>
+<text x="108" y="306" text-anchor="middle" font-size="18" fill="#0D1426">売上</text>
+<rect x="200" y="36" width="190" height="36" rx="18" fill="#0D1426"/><text x="295" y="61" text-anchor="middle" font-size="20" fill="#3FD0E0">半年ごとに新型</text>
+<g class="r"><g transform="translate(250 230)"><path d="M0 -44 C14 -30 16 -6 14 20 H-14 C-16 -6 -14 -30 0 -44Z" fill="#1E3A6E"/><circle cy="-12" r="7" fill="#3FD0E0"/><path d="M-14 6 L-26 26 L-14 20Z M14 6 L26 26 L14 20Z" fill="#FF8A3D"/><path class="fire" d="M-9 20 L0 44 L9 20Z" fill="#FF8A3D"/></g></g>
+<g class="r r2"><g transform="translate(340 230)"><path d="M0 -44 C14 -30 16 -6 14 20 H-14 C-16 -6 -14 -30 0 -44Z" fill="#B04A12"/><circle cy="-12" r="7" fill="#EEF2F7"/><path d="M-14 6 L-26 26 L-14 20Z M14 6 L26 26 L14 20Z" fill="#1E3A6E"/><path class="fire" d="M-9 20 L0 44 L9 20Z" fill="#FF8A3D"/></g></g>
+</g>
+<rect x="34" y="332" width="176" height="44" rx="22" fill="#3FD0E0"/><text x="122" y="362" text-anchor="middle" font-size="24" fill="#0D1426">売上の8割</text>
+<rect x="222" y="332" width="176" height="44" rx="22" fill="#FF8A3D"/><text x="310" y="362" text-anchor="middle" font-size="24" fill="#0D1426">止まれない</text>
 </svg></x-embed>
-<div data-build-in="rise 1 auto" style="position:absolute; left:640px; top:112px; width:1152px; display:flex; flex-direction:column; align-items:flex-start; gap:16px"><p style="font-size:24px; font-weight:700; color:#0D1426; background:#3FD0E0; padding:6px 20px; border-radius:999px">AIエージェント</p><h2 style="font-family:'Dela Gothic One', 'Noto Sans JP', sans-serif; font-size:48px; font-weight:400; line-height:1.3; color:#EEF2F7">電話予約やメール、サブスク解約まで代行！「パーソナルAIエージェント」</h2></div>
-<div data-build-in="fade 2 auto" style="position:absolute; left:640px; top:324px; width:1152px; display:flex; flex-direction:column; gap:8px"><p style="font-size:24px; font-weight:700; letter-spacing:4px; color:#3FD0E0">概要</p><p style="font-size:28px; line-height:1.6; color:#D5DDEA">専用の電話番号やメールアドレスを持ったAI（Manus 2.0「Cue」やMeta「Muse」など）が登場。人の代わりにレストランを電話予約し、営業メールを送り、不要なサブスクの解約まで自動で行います。</p></div>
-<div data-build-in="rise 3 auto" style="position:absolute; left:640px; top:548px; width:368px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Book" style="color:#B8C4D6; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#B8C4D6">用語メモ</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA"><b>パーソナルAIエージェント：</b>専用の電話・メール・ブラウザを使い、現実の作業（タスク）まで完結させるAIの代理人です。</p></div>
-<div data-build-in="rise 4 auto" style="position:absolute; left:1032px; top:548px; width:368px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Lightbulb" style="color:#3FD0E0; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#3FD0E0">たとえ話</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">お金や電話を持たせた「頼れる専属アシスタント」が、面倒な予約や手続き、無駄なサブスク解約を代わりにやってくれる状態。</p></div>
-<div data-build-in="rise 5 auto" style="position:absolute; left:1424px; top:548px; width:368px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Users" style="color:#FF8A3D; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#FF8A3D">仕事・生活への影響</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">予約電話や面倒な手続き、放置していたサブスク解約もAIに丸投げでき、日々の雑務のストレスが劇的に減ります。</p></div>
+<div data-build-in="rise 1 auto" style="position:absolute; left:640px; top:112px; width:1152px; display:flex; flex-direction:column; align-items:flex-start; gap:16px"><p style="font-size:24px; font-weight:700; color:#0D1426; background:#3FD0E0; padding:6px 20px; border-radius:999px">AI業界 ｜ Anthropic</p><h2 style="font-family:'Dela Gothic One', 'Noto Sans JP', sans-serif; font-size:44px; font-weight:400; line-height:1.3; color:#EEF2F7">【アンソロピック上場で判明】直近モデルが売上の8割！AI企業の壮絶な最先端開発レース</h2></div>
+<div data-build-in="fade 2 auto" style="position:absolute; left:640px; top:312px; width:1152px; display:flex; flex-direction:column; gap:8px"><p style="font-size:24px; font-weight:700; letter-spacing:4px; color:#3FD0E0">どんなニュース？</p><p style="font-size:28px; line-height:1.6; color:#D5DDEA">AI大手Anthropic（アンソロピック）の上場申請書類（S-1）が公開され、134兆円超の巨大データセンター契約や、80ページに及ぶ「人類滅亡リスク」の警告文が話題に。さらに売上の8割以上が「直近6ヶ月以内にリリースされた最新モデル」から生まれている実態が判明しました。</p></div>
+<div data-build-in="rise 3 auto" style="position:absolute; left:640px; top:616px; width:564px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Lightbulb" style="color:#3FD0E0; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#3FD0E0">例え話でいうと</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">半年に1回、超高性能な新型ロケット（最新AIモデル）を作り続けないと一気にライバルに顧客を奪われる、止まれない自転車操業レース。</p></div>
+<div data-build-in="rise 4 auto" style="position:absolute; left:1228px; top:616px; width:564px; display:flex; flex-direction:column; gap:12px; background:#16213D; border:2px solid #24345C; border-radius:20px; padding:28px"><div style="display:flex; flex-direction:row; align-items:center; gap:12px"><x-icon name="Users" style="color:#FF8A3D; width:32px; height:32px"></x-icon><p style="font-size:24px; font-weight:700; color:#FF8A3D">生活・仕事への影響</p></div><p style="font-size:24px; line-height:1.6; color:#D5DDEA">AIの進化速度が落ちない理由がここに。常に「数ヶ月前のAI」が古いものになっていく猛烈なスピード変化が、今後も続きます。</p></div>
 <p style="position:absolute; left:128px; bottom:64px; width:800px; font-size:24px; color:#8190AD">AIニュース TOP10</p>
 <p style="position:absolute; right:128px; bottom:64px; width:400px; text-align:right; font-size:24px; color:#8190AD">第6位</p>
-<aside>第6位はパーソナルAIエージェント。中心のAIから予約・メール・買い物・解約へ次々に処理が飛ぶ動きを見せ、「答えるだけでなく現実の作業まで終わらせる代理人」を伝える。</aside>
+<aside>第6位：【アンソロピック上場で判明】直近モデルが売上の8割！AI企業の壮絶な最先端開発レース。どんなニュース？　AI大手Anthropic（アンソロピック）の上場申請書類（S-1）が公開され、134兆円超の巨大データセンター契約や、80ページに及ぶ「人類滅亡リスク」の警告文が話題に。さらに売上の8割以上が「直近6ヶ月以内にリリースされた最新モデル」から生まれている実態が判明しました。　例え話でいうと：半年に1回、超高性能な新型ロケット（最新AIモデル）を作り続けないと一気にライバルに顧客を奪われる、止まれない自転車操業レース。　生活・仕事への影響：AIの進化速度が落ちない理由がここに。常に「数ヶ月前のAI」が古いものになっていく猛烈なスピード変化が、今後も続きます。</aside>
 </section>
