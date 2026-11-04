@@ -4,7 +4,7 @@
   "lists": "css",
   "title": "10月のAIニュース TOP10（コピー）",
   "cover": "cover",
-  "order": ["cover", "why", "n10", "n9", "n8", "n7", "n6", "n5", "n4", "n3", "n2", "reveal", "n1", "overview", "outro", "qa", "dd1", "dd2", "dd3", "dd4", "dd5", "dd6", "dd7", "dd8", "dd9", "dd10", "dd11"],
+  "order": ["cover", "profile", "manga-sample", "sns-insta", "why", "n10", "n9", "n8", "n7", "n6", "n5", "n4", "n3", "n2", "reveal", "n1", "overview", "outro", "qa", "dd1", "dd2", "dd3", "dd4", "dd5", "dd6", "dd7", "dd8", "dd9", "dd10", "dd11"],
   "sections": {
     "s1": {"description": "オープニング：AIニュースを知っておくべき理由", "start": "cover"},
     "s2": {"description": "第10位〜第6位：ロボット住宅・Web更新・AIの後始末・盗聴器事件・AIエージェント", "start": "n10"},
